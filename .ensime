@@ -1,0 +1,52 @@
+;; If your project contains a lot of files, it is advisable to enable (:disable-source-load-on-startup t)
+;; Otherwise Ensime might incur a massive lag at startup time
+;; See more information about that at http://ensime.github.io/
+
+(
+  :name "Hello Scala"
+  :scala-version "2.11.2"
+  :reference-source-roots (
+    "/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip"
+  )
+  :subprojects (
+    (
+      :name "Hello Scala"
+      :scala-version "2.11.2"
+      :module-name "hello-scala"
+      :depends-on-modules (
+      
+      )
+      :package "hello-scala"
+      :version "1.0"
+      :compile-deps (
+        "/Users/anil/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.2.jar"
+      )
+      :runtime-deps (
+        "/Users/anil/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.2.jar"
+        "/Users/anil/Code/scala/hello_scala/target/scala-2.11/classes"
+        "/Users/anil/Code/scala/hello_scala/target/scala-2.11/classes"
+      )
+      :test-deps (
+        "/Users/anil/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.2.jar"
+        "/Users/anil/Code/scala/hello_scala/target/scala-2.11/classes"
+        "/Users/anil/Code/scala/hello_scala/target/scala-2.11/test-classes"
+      )
+      :source-roots (
+        "/Users/anil/Code/scala/hello_scala/src/main/scala"
+        "/Users/anil/Code/scala/hello_scala/src/main/java"
+        "/Users/anil/Code/scala/hello_scala/target/scala-2.11/src_managed/main"
+        "/Users/anil/Code/scala/hello_scala/src/test/scala"
+        "/Users/anil/Code/scala/hello_scala/src/test/java"
+        "/Users/anil/Code/scala/hello_scala/target/scala-2.11/src_managed/test"
+      )
+      :reference-source-roots (
+      
+      )
+      :target "/Users/anil/Code/scala/hello_scala/target/scala-2.11/classes"
+      :test-target "/Users/anil/Code/scala/hello_scala/target/scala-2.11/test-classes"
+      :compiler-args (
+      
+      )
+    )
+  )
+)
